@@ -2,25 +2,52 @@ import $ from 'jquery';
 import 'bootstrap';
 import legoParts from '../../data/partsData';
 
+// const headBuilder = (array) => {
+//   let newString = '';
+//   let counter = 0;
+//   console.log(array.length);
+//   $('#headArea').click(() => {
+//     counter = (counter + 1) % array.length;
+//   });
+//   newString += `<h3>${array[counter].name}</h3>`;
+//   console.log(array);
+//   $('#headArea').html(newString);
+// };
+
 const headBuilder = (array) => {
   let newString = '';
-  newString += `<h3>${array[0].name}</h3>`;
+  let i = 0;
+  console.log(array.length);
+  $('#headButton').click(() => {
+    newString = `<h3>${array[i].name}</h3>`;
+    i = (i + 1) % array.length;
+    $('#headArea').html(newString);
+  });
   console.log(array);
-  $('#headArea').html(newString);
 };
 
 const torsoBuilder = (array) => {
   let newString = '';
-  newString += `<h3>${array}</h3>`;
+  let i = 0;
+  console.log(array.length);
+  $('#torsoButton').click(() => {
+    newString = `<h3>${array[i].name}</h3>`;
+    i = (i + 1) % array.length;
+    $('#torsoArea').html(newString);
+  });
   console.log(array);
-  $('#torsoArea').html(newString);
 };
 
 const legBuilder = (array) => {
   let newString = '';
-  newString += `<h3>${array}</h3>`;
+  let i = 0;
+  console.log(array.length);
+  $('#legButton').click(() => {
+    newString = `<h3>${array[i].name}</h3>`;
+    i = (i + 1) % array.length;
+    $('#legArea').html(newString);
+  });
   console.log(array);
-  $('#legArea').html(newString);
 };
 
 const initialHeadView = () => {
