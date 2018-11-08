@@ -20,8 +20,10 @@ const headBuilder = (array) => {
   console.log(array.length);
   $('#headButton').click(() => {
     newString = `<h3>${array[i].name}</h3>`;
-    i = (i + 1) % array.length;
     $('#headArea').html(newString);
+    newString = `<img class="headImg" src="${array[i].imageUrl}">`;
+    i = (i + 1) % array.length;
+    $('#headArea2').html(newString);
   });
   console.log(array);
 };
@@ -32,8 +34,10 @@ const torsoBuilder = (array) => {
   console.log(array.length);
   $('#torsoButton').click(() => {
     newString = `<h3>${array[i].name}</h3>`;
-    i = (i + 1) % array.length;
     $('#torsoArea').html(newString);
+    newString = `<img class="torsoImg" src="${array[i].imageUrl}">`;
+    i = (i + 1) % array.length;
+    $('#torsoArea2').html(newString);
   });
   console.log(array);
 };
@@ -44,8 +48,10 @@ const legBuilder = (array) => {
   console.log(array.length);
   $('#legButton').click(() => {
     newString = `<h3>${array[i].name}</h3>`;
-    i = (i + 1) % array.length;
     $('#legArea').html(newString);
+    newString = `<img class="legImg" src="${array[i].imageUrl}">`;
+    i = (i + 1) % array.length;
+    $('#legArea2').html(newString);
   });
   console.log(array);
 };

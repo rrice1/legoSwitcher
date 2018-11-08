@@ -10,5 +10,30 @@ body{
 #container2{
   display: flex;
   justify-content: center;
+}
 
+#container3{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#bigContainer{
+  display: flex;
+  justify-content: center;
+}
+
+.headImg{
+height: 200px;
+width: 200px;
+}
+
+.torsoImg{
+height: 200px;
+width: 200px;
+}
+
+.legImg{
+height: 200px;
+width: 200px;
 }
