@@ -1,5 +1,7 @@
 
+const savedChar = [];
 
 
-
-let savedChar = [];
+$('#saveButton').click(() => {
+  savedChar.push();
+});
