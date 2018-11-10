@@ -1,1 +1,5 @@
-console.log('savedCharacters.js');
+
+
+
+
+let savedChar = [];
